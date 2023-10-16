@@ -1,0 +1,14 @@
+
+
+<h1 class="text-center text-primary">Todo App in Angular Material</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 form-group">
+            <label for="newtask">Add Task</label>
+            <input type="text" class="form-control" id="newtask" placeholder="Add New" [(ngModel)]="taskinput">
+        </div>
+    </div>
+   <button class="btn btn-success" (click)="addtodo()"  [disabled]= !taskinput.length>Add</button>
+   <button class="btn btn-danger" (click)="addreset()"  [disabled]= !taskinput.length>Reset</button>
+</div>
